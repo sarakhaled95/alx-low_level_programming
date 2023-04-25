@@ -19,7 +19,7 @@ void print_to_98(int n)
 			}
 			else if (i == 98)
 			{
-				ptintf("%d\n", i);
+				printf("%d\n", i);
 			}
 		for (j = n; j >= 98; j--)
 			if (j != 98)
