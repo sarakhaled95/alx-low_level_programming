@@ -1,19 +1,18 @@
 #include "main.h"
 /**
  * _abs - computes the absolute value of an integer
- * @c: number that is checked
- * Return: Always 0
+ * @c: The number to be computed
+ * Return: Absolute number or zero
  */
 
 int _abs(int c)
 {
 	if (c < 0)
 	{
-		int abs_val;
+		int n;
 
-		int abs_val = c * -1;
-
-		_putchar(abs_val);
+		n = c * -1;
+		return (n);
 	}
-	_putchar(c);
+	return (c);
 }
