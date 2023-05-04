@@ -2,7 +2,7 @@
 /**
  * _strncpy - copies a sting
  * @dest: string 1
- * @src: string 2 
+ * @src: string 2
  * @n: size of string
  * Return: pointer to dest
  */
