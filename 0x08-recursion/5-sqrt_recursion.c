@@ -2,12 +2,13 @@
 /**
  * _sqrt_recursion - the natural square root of a number
  * @n: number to be squared
+ * @val: square root value
  * Return: the natural square root
  */
 int square(int n, int val);
 int _sqrt_recursion(int n)
 {
-	return(square(n, 1));
+	return (square(n, 1));
 }
 
 /**
@@ -25,7 +26,7 @@ int square(int n, int val)
 	}
 	else if (val * val < n)
 	{
-		return (square(n , val + 1));
+		return (square(n, val + 1));
 	}
 	else
 		return (-1);
