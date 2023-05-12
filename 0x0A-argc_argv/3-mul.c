@@ -1,29 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
-/**
- * main - a program that multiplies two numbers
- * @argc: argument count
- * @argv: argument vector
- * Return: Always 0
- */
-int _atoi(char *s);
-
-int main(int argc, char *argv[])
-{
-	int mul = 0;
-
-	if (argc > 3 || argc < 3)
-	{
-		printf("Error");
-		return (1);
-	}
-
-	mul = _atoi(argv[1]) * _atoi(argv[2]);
-	printf("%d\n", mul);
-	return (0);
-}
-
 /**
  * _atoi - converts a string to an integer
  * @s: string to be converted
@@ -69,3 +45,24 @@ int _atoi(char *s)
 	return (n);
 }
 
+/**
+ * main - a program that multiplies two numbers
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: Always 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int mul = 0;
+
+	if (argc > 3 || argc < 3)
+	{
+		printf("Error");
+		return (1);
+	}
+
+	mul = _atoi(argv[1]) * _atoi(argv[2]);
+	printf("%d\n", mul);
+	return (0);
+}
