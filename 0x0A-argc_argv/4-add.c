@@ -50,7 +50,7 @@ int _atoi(char *s)
 /**
  * main - a program that adds positive numbers
  * @argc: argument count
- * @argc: argument vector
+ * @argv: argument vector
  * Return: Always 0 for succes 1 for error
  */
 int main(int argc, char *argv[])
