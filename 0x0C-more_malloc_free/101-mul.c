@@ -38,7 +38,7 @@ int _atoi(const char *s)
 	for (i = fn; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
-		resp +=(s[i] - 48);
+		resp += (s[i] - 48);
 	}
 	return (sign * resp);
 }
