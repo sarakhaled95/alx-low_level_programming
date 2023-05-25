@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * print_all - Entry Point
+ * print_all - prints anything
  * c = char, i = int, f = float, s = char * (if null print (nil))
  * @format: list of arg types
  * Return: 0
@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	int n = 0, i = 0;
+	int j = 0, i = 0;
 	char *sep = ", ";
 	char *str;
 
@@ -19,13 +19,13 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 		i++;
 
-	while (format && format[n])
+	while (format && format[j])
 	{
-		if (n  == (i - 1))
+		if (j  == (i - 1))
 		{
 			sep = "";
 		}
-		switch (format[n])
+		switch (format[j])
 		{
 		case 'c':
 			printf("%c%s", va_arg(valist, int), sep);
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 			printf("%s%s", str, sep);
 			break;
 		}
-		n++;
+		j++;
 	}
 	printf("\n");
 	va_end(valist);
