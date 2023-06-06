@@ -34,7 +34,7 @@ size_t free_listint_safe(listint_t **h)
 	size_t len;
 	int loop = 1;
 
-	if(h == NULL || *h == NULL)
+	if (h == NULL || *h == NULL)
 		return (0);
 
 	loopnode = find_list_loop_f1(*h);
