@@ -5,7 +5,7 @@
  * @index: is the index, starting from 0 of the bit you want to set
  * Returns: 1 if it worked, or -1 if an error occurred
  */
-clear_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	if (index >= sizeof(n) * 8)
 		return (-1);
