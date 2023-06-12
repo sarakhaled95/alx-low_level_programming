@@ -32,12 +32,12 @@ int main(int argc, char **argv)
 		if (write(to_fd, buf, bytes) != bytes)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 	if (bytes == -1)
-		dprintf(STDERR_FILENO, ERR_NOREAD, argv[1]), exit(98);
+		dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 	from_fd = close(from_fd);
 	to_fd = close(to_fd);
 	if (from_fd)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
 	if (to_fd)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
-	return (1);
+	return (EXIT_SUCCESS);
 }
