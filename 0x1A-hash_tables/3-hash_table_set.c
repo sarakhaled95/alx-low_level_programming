@@ -42,7 +42,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *hash_node, *temp;
 	char *new_value;
 
-	if (!ht || ht->array == NULL || ht->size == NULL ||
+	if (!ht || ht->array == NULL || ht->size == 0 ||
 		key == NULL || strlen(key) == 0 || value == NULL)
 			return (0);
 
