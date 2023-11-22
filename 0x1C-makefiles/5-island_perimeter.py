@@ -4,6 +4,7 @@
 
 
 def island_perimeter(grid):
+    """calculates the peramiter of island in grid"""
 
     width = len(grid[0])
     height = len(grid)
